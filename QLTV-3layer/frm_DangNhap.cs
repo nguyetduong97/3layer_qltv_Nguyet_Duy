@@ -31,7 +31,7 @@ namespace QLTV_3layer
             XL_BANG.Chuoi_lien_ket = "Data Source=.\\SQLEXPRESS;Initial Catalog=QLTHUVIEN;Integrated Security=True";
             try
             {
-                XL_TAIKHOAN tk = new XL_TAIKHOAN("select * TAIKHOAN where TenTK = '" + txtUserName.Text + "' and MatKhau = '" + txtPassword.Text + "'");
+                XL_TAIKHOAN tk = new XL_TAIKHOAN("select * from TAIKHOAN where TenTK = '" + txtUserName.Text + "' and MatKhau = '" + txtPassword.Text + "'");
                 if(tk.Rows.Count>0)
                 {
                     parentForm.login(txtUserName.Text);
@@ -45,6 +45,11 @@ namespace QLTV_3layer
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void frm_DangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

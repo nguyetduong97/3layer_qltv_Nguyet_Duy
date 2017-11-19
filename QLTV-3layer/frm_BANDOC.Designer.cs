@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.tabControl1 = new DevComponents.DotNetBar.TabControl();
-            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext1 = new System.Windows.Forms.Button();
@@ -57,51 +54,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabItemBandoc = new DevComponents.DotNetBar.TabItem(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabControlPanel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSBD)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel1);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.SelectedTabIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(733, 531);
-            this.tabControl1.TabIndex = 0;
-            this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tabControl1.Tabs.Add(this.tabItemBandoc);
-            this.tabControl1.Text = "tabControl1";
-            // 
-            // tabControlPanel1
-            // 
-            this.tabControlPanel1.Controls.Add(this.groupBox3);
-            this.tabControlPanel1.Controls.Add(this.groupBox2);
-            this.tabControlPanel1.Controls.Add(this.groupBox1);
-            this.tabControlPanel1.Controls.Add(this.label1);
-            this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
-            this.tabControlPanel1.Name = "tabControlPanel1";
-            this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel1.Size = new System.Drawing.Size(733, 505);
-            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(194)))), ((int)(((byte)(237)))));
-            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(241)))), ((int)(((byte)(251)))));
-            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.SystemColors.ControlDark;
-            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel1.Style.GradientAngle = 90;
-            this.tabControlPanel1.TabIndex = 1;
-            this.tabControlPanel1.TabItem = this.tabItemBandoc;
             // 
             // groupBox3
             // 
@@ -114,10 +71,10 @@
             this.groupBox3.Controls.Add(this.btnThem);
             this.groupBox3.Controls.Add(this.btnGhi);
             this.groupBox3.Controls.Add(this.btnKhongGhi);
-            this.groupBox3.Location = new System.Drawing.Point(12, 400);
+            this.groupBox3.Location = new System.Drawing.Point(6, 428);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(721, 58);
-            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
             // btnPrevious
@@ -128,7 +85,6 @@
             this.btnPrevious.TabIndex = 1;
             this.btnPrevious.Text = "<";
             this.btnPrevious.UseVisualStyleBackColor = true;
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext1
             // 
@@ -138,7 +94,6 @@
             this.btnNext1.TabIndex = 1;
             this.btnNext1.Text = ">";
             this.btnNext1.UseVisualStyleBackColor = true;
-            this.btnNext1.Click += new System.EventHandler(this.btnNext1_Click);
             // 
             // btnVecuoi
             // 
@@ -148,7 +103,6 @@
             this.btnVecuoi.TabIndex = 1;
             this.btnVecuoi.Text = ">>";
             this.btnVecuoi.UseVisualStyleBackColor = true;
-            this.btnVecuoi.Click += new System.EventHandler(this.btnVecuoi_Click);
             // 
             // btnVeDau
             // 
@@ -158,7 +112,6 @@
             this.btnVeDau.TabIndex = 1;
             this.btnVeDau.Text = "<<";
             this.btnVeDau.UseVisualStyleBackColor = true;
-            this.btnVeDau.Click += new System.EventHandler(this.btnVeDau_Click);
             // 
             // btnSua
             // 
@@ -168,7 +121,6 @@
             this.btnSua.TabIndex = 0;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -178,7 +130,6 @@
             this.btnXoa.TabIndex = 0;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -188,7 +139,6 @@
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnGhi
             // 
@@ -198,7 +148,6 @@
             this.btnGhi.TabIndex = 0;
             this.btnGhi.Text = "Ghi";
             this.btnGhi.UseVisualStyleBackColor = true;
-            this.btnGhi.Click += new System.EventHandler(this.btnGhi_Click);
             // 
             // btnKhongGhi
             // 
@@ -208,15 +157,14 @@
             this.btnKhongGhi.TabIndex = 0;
             this.btnKhongGhi.Text = "Không Ghi";
             this.btnKhongGhi.UseVisualStyleBackColor = true;
-            this.btnKhongGhi.Click += new System.EventHandler(this.btnKhongGhi_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvDSBD);
-            this.groupBox2.Location = new System.Drawing.Point(12, 194);
+            this.groupBox2.Location = new System.Drawing.Point(6, 222);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(721, 200);
-            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Sách Bạn Đọc";
             // 
@@ -230,9 +178,8 @@
             this.Column4});
             this.dgvDSBD.Location = new System.Drawing.Point(0, 19);
             this.dgvDSBD.Name = "dgvDSBD";
-            this.dgvDSBD.Size = new System.Drawing.Size(721, 172);
+            this.dgvDSBD.Size = new System.Drawing.Size(721, 201);
             this.dgvDSBD.TabIndex = 0;
-            this.dgvDSBD.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvDSBD_CellBeginEdit);
             // 
             // Column1
             // 
@@ -268,10 +215,10 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 52);
+            this.groupBox1.Location = new System.Drawing.Point(6, 80);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(721, 135);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Bạn Đọc";
             // 
@@ -343,51 +290,36 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(295, 15);
+            this.label1.Location = new System.Drawing.Point(240, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(235, 24);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 4;
             this.label1.Text = "DANH SÁCH BẠN ĐỌC";
-            // 
-            // tabItemBandoc
-            // 
-            this.tabItemBandoc.AttachedControl = this.tabControlPanel1;
-            this.tabItemBandoc.Name = "tabItemBandoc";
-            this.tabItemBandoc.Text = "Bạn Đọc";
             // 
             // frm_BANDOC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 529);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label1);
             this.Name = "frm_BANDOC";
             this.Text = "frm_BANDOC";
             this.Load += new System.EventHandler(this.frm_BANDOC_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabControlPanel1.ResumeLayout(false);
-            this.tabControlPanel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSBD)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevComponents.DotNetBar.TabControl tabControl1;
-        private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
-        private DevComponents.DotNetBar.TabItem tabItemBandoc;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNext1;
@@ -404,9 +336,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtTenBanDoc;
         private System.Windows.Forms.TextBox txtDienThoai;
         private System.Windows.Forms.TextBox txtMaThe;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

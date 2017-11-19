@@ -77,10 +77,6 @@
     <Compile Include="frm_Sach.Designer.cs">
       <DependentUpon>frm_Sach.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOP\XL_BANDOC.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="LOP\XL_BANG.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

@@ -31,11 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
-            this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonPanel4 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonPanel3 = new DevComponents.DotNetBar.RibbonPanel();
+            this.btTracuusach = new DevExpress.XtraEditors.SimpleButton();
+            this.btNhapsach = new DevExpress.XtraEditors.SimpleButton();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
+            this.btThongtindocgia = new DevExpress.XtraEditors.SimpleButton();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.btThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.btDoimatkhau = new DevExpress.XtraEditors.SimpleButton();
+            this.btDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
+            this.btnMuonSach = new DevExpress.XtraEditors.SimpleButton();
+            this.ribbonPanel4 = new DevComponents.DotNetBar.RibbonPanel();
+            this.btMuontrasach = new DevExpress.XtraEditors.SimpleButton();
             this.rbTHeThong = new DevComponents.DotNetBar.RibbonTabItem();
             this.rbtBanDoc = new DevComponents.DotNetBar.RibbonTabItem();
             this.rbtSach = new DevComponents.DotNetBar.RibbonTabItem();
@@ -63,22 +71,14 @@
             this.btIQLTV = new DevComponents.DotNetBar.ButtonItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.tabMain = new DevComponents.DotNetBar.TabControl();
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
-            this.btThoat = new DevExpress.XtraEditors.SimpleButton();
-            this.btDoimatkhau = new DevExpress.XtraEditors.SimpleButton();
-            this.btDangNhap = new DevExpress.XtraEditors.SimpleButton();
-            this.btThongtindocgia = new DevExpress.XtraEditors.SimpleButton();
-            this.btnMuonSach = new DevExpress.XtraEditors.SimpleButton();
-            this.btMuontrasach = new DevExpress.XtraEditors.SimpleButton();
-            this.btTracuusach = new DevExpress.XtraEditors.SimpleButton();
-            this.btNhapsach = new DevExpress.XtraEditors.SimpleButton();
+            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.ribbonControl1.SuspendLayout();
-            this.ribbonPanel5.SuspendLayout();
-            this.ribbonPanel4.SuspendLayout();
             this.ribbonPanel3.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
+            this.ribbonPanel5.SuspendLayout();
+            this.ribbonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
             this.tabMain.SuspendLayout();
             this.SuspendLayout();
@@ -106,35 +106,11 @@
             this.office2007StartButton1,
             this.btIQLTV,
             this.qatCustomizeItem1});
-            this.ribbonControl1.Size = new System.Drawing.Size(634, 154);
+            this.ribbonControl1.Size = new System.Drawing.Size(845, 154);
             this.ribbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonControl1.TabGroupHeight = 14;
             this.ribbonControl1.TabIndex = 0;
             this.ribbonControl1.Text = "ribbonControl1";
-            // 
-            // ribbonPanel5
-            // 
-            this.ribbonPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel5.Controls.Add(this.btnMuonSach);
-            this.ribbonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel5.Location = new System.Drawing.Point(0, 54);
-            this.ribbonPanel5.Name = "ribbonPanel5";
-            this.ribbonPanel5.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel5.Size = new System.Drawing.Size(634, 98);
-            this.ribbonPanel5.TabIndex = 5;
-            this.ribbonPanel5.Visible = false;
-            // 
-            // ribbonPanel4
-            // 
-            this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel4.Controls.Add(this.btMuontrasach);
-            this.ribbonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel4.Location = new System.Drawing.Point(0, 54);
-            this.ribbonPanel4.Name = "ribbonPanel4";
-            this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel4.Size = new System.Drawing.Size(634, 98);
-            this.ribbonPanel4.TabIndex = 4;
-            this.ribbonPanel4.Visible = false;
             // 
             // ribbonPanel3
             // 
@@ -145,8 +121,29 @@
             this.ribbonPanel3.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel3.Name = "ribbonPanel3";
             this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel3.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel3.Size = new System.Drawing.Size(845, 98);
             this.ribbonPanel3.TabIndex = 3;
+            // 
+            // btTracuusach
+            // 
+            this.btTracuusach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.lookup_reference_32x32;
+            this.btTracuusach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btTracuusach.Location = new System.Drawing.Point(86, 12);
+            this.btTracuusach.Name = "btTracuusach";
+            this.btTracuusach.Size = new System.Drawing.Size(74, 68);
+            this.btTracuusach.TabIndex = 1;
+            this.btTracuusach.Text = "Tra cứu sách";
+            // 
+            // btNhapsach
+            // 
+            this.btNhapsach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.content_32x32;
+            this.btNhapsach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btNhapsach.Location = new System.Drawing.Point(12, 12);
+            this.btNhapsach.Name = "btNhapsach";
+            this.btNhapsach.Size = new System.Drawing.Size(67, 68);
+            this.btNhapsach.TabIndex = 0;
+            this.btNhapsach.Text = "Nhập Sách";
+            this.btNhapsach.Click += new System.EventHandler(this.btNhapsach_Click);
             // 
             // ribbonPanel2
             // 
@@ -159,6 +156,17 @@
             this.ribbonPanel2.Size = new System.Drawing.Size(634, 98);
             this.ribbonPanel2.TabIndex = 2;
             this.ribbonPanel2.Visible = false;
+            // 
+            // btThongtindocgia
+            // 
+            this.btThongtindocgia.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.usergroup_32x32;
+            this.btThongtindocgia.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btThongtindocgia.Location = new System.Drawing.Point(12, 3);
+            this.btThongtindocgia.Name = "btThongtindocgia";
+            this.btThongtindocgia.Size = new System.Drawing.Size(102, 72);
+            this.btThongtindocgia.TabIndex = 0;
+            this.btThongtindocgia.Text = "Thông tin độc giả";
+            this.btThongtindocgia.Click += new System.EventHandler(this.btThongtindocgia_Click);
             // 
             // ribbonPanel1
             // 
@@ -173,6 +181,80 @@
             this.ribbonPanel1.Size = new System.Drawing.Size(634, 98);
             this.ribbonPanel1.TabIndex = 1;
             this.ribbonPanel1.Visible = false;
+            // 
+            // btThoat
+            // 
+            this.btThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btThoat.ImageOptions.Image")));
+            this.btThoat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btThoat.Location = new System.Drawing.Point(166, 3);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(75, 69);
+            this.btThoat.TabIndex = 2;
+            this.btThoat.Text = "Thoát";
+            // 
+            // btDoimatkhau
+            // 
+            this.btDoimatkhau.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btDoimatkhau.ImageOptions.Image")));
+            this.btDoimatkhau.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btDoimatkhau.Location = new System.Drawing.Point(85, 3);
+            this.btDoimatkhau.Name = "btDoimatkhau";
+            this.btDoimatkhau.Size = new System.Drawing.Size(75, 70);
+            this.btDoimatkhau.TabIndex = 1;
+            this.btDoimatkhau.Text = "Đổi Mật Khẩu";
+            // 
+            // btDangNhap
+            // 
+            this.btDangNhap.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.reset2_32x32;
+            this.btDangNhap.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btDangNhap.Location = new System.Drawing.Point(12, 3);
+            this.btDangNhap.Name = "btDangNhap";
+            this.btDangNhap.Size = new System.Drawing.Size(67, 70);
+            this.btDangNhap.TabIndex = 0;
+            this.btDangNhap.Text = "Đăng Nhập";
+            // 
+            // ribbonPanel5
+            // 
+            this.ribbonPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel5.Controls.Add(this.btnMuonSach);
+            this.ribbonPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel5.Location = new System.Drawing.Point(0, 54);
+            this.ribbonPanel5.Name = "ribbonPanel5";
+            this.ribbonPanel5.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel5.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel5.TabIndex = 5;
+            this.ribbonPanel5.Visible = false;
+            // 
+            // btnMuonSach
+            // 
+            this.btnMuonSach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.recentlyuse_32x32;
+            this.btnMuonSach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnMuonSach.Location = new System.Drawing.Point(12, 7);
+            this.btnMuonSach.Name = "btnMuonSach";
+            this.btnMuonSach.Size = new System.Drawing.Size(102, 80);
+            this.btnMuonSach.TabIndex = 0;
+            this.btnMuonSach.Text = "Mượn sách";
+            // 
+            // ribbonPanel4
+            // 
+            this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel4.Controls.Add(this.btMuontrasach);
+            this.ribbonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel4.Location = new System.Drawing.Point(0, 54);
+            this.ribbonPanel4.Name = "ribbonPanel4";
+            this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel4.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel4.TabIndex = 4;
+            this.ribbonPanel4.Visible = false;
+            // 
+            // btMuontrasach
+            // 
+            this.btMuontrasach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.namemanager_32x32;
+            this.btMuontrasach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btMuontrasach.Location = new System.Drawing.Point(12, 3);
+            this.btMuontrasach.Name = "btMuontrasach";
+            this.btMuontrasach.Size = new System.Drawing.Size(120, 89);
+            this.btMuontrasach.TabIndex = 0;
+            this.btMuontrasach.Text = "Xử Lý Mượn Trả Sách";
             // 
             // rbTHeThong
             // 
@@ -412,22 +494,16 @@
             // 
             this.tabMain.CanReorderTabs = true;
             this.tabMain.Controls.Add(this.tabControlPanel1);
-            this.tabMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabMain.Location = new System.Drawing.Point(0, 154);
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.tabMain.SelectedTabIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(634, 152);
+            this.tabMain.Size = new System.Drawing.Size(845, 318);
             this.tabMain.TabIndex = 1;
             this.tabMain.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabMain.Tabs.Add(this.tabItem1);
             this.tabMain.Text = "tabControl1";
-            // 
-            // tabItem1
-            // 
-            this.tabItem1.AttachedControl = this.tabControlPanel1;
-            this.tabItem1.Name = "tabItem1";
-            this.tabItem1.Text = "tabItem1";
             // 
             // tabControlPanel1
             // 
@@ -435,7 +511,7 @@
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel1.Size = new System.Drawing.Size(634, 126);
+            this.tabControlPanel1.Size = new System.Drawing.Size(845, 292);
             this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(194)))), ((int)(((byte)(237)))));
             this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(241)))), ((int)(((byte)(251)))));
             this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -446,93 +522,17 @@
             this.tabControlPanel1.TabIndex = 1;
             this.tabControlPanel1.TabItem = this.tabItem1;
             // 
-            // btThoat
+            // tabItem1
             // 
-            this.btThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btThoat.ImageOptions.Image")));
-            this.btThoat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btThoat.Location = new System.Drawing.Point(166, 3);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(75, 69);
-            this.btThoat.TabIndex = 2;
-            this.btThoat.Text = "Thoát";
-            // 
-            // btDoimatkhau
-            // 
-            this.btDoimatkhau.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btDoimatkhau.ImageOptions.Image")));
-            this.btDoimatkhau.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btDoimatkhau.Location = new System.Drawing.Point(85, 3);
-            this.btDoimatkhau.Name = "btDoimatkhau";
-            this.btDoimatkhau.Size = new System.Drawing.Size(75, 70);
-            this.btDoimatkhau.TabIndex = 1;
-            this.btDoimatkhau.Text = "Đổi Mật Khẩu";
-            // 
-            // btDangNhap
-            // 
-            this.btDangNhap.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.reset2_32x32;
-            this.btDangNhap.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btDangNhap.Location = new System.Drawing.Point(12, 3);
-            this.btDangNhap.Name = "btDangNhap";
-            this.btDangNhap.Size = new System.Drawing.Size(67, 70);
-            this.btDangNhap.TabIndex = 0;
-            this.btDangNhap.Text = "Đăng Nhập";
-            // 
-            // btThongtindocgia
-            // 
-            this.btThongtindocgia.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.usergroup_32x32;
-            this.btThongtindocgia.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btThongtindocgia.Location = new System.Drawing.Point(12, 3);
-            this.btThongtindocgia.Name = "btThongtindocgia";
-            this.btThongtindocgia.Size = new System.Drawing.Size(102, 72);
-            this.btThongtindocgia.TabIndex = 0;
-            this.btThongtindocgia.Text = "Thông tin độc giả";
-            this.btThongtindocgia.Click += new System.EventHandler(this.btThongtindocgia_Click);
-            // 
-            // btnMuonSach
-            // 
-            this.btnMuonSach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.recentlyuse_32x32;
-            this.btnMuonSach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnMuonSach.Location = new System.Drawing.Point(12, 7);
-            this.btnMuonSach.Name = "btnMuonSach";
-            this.btnMuonSach.Size = new System.Drawing.Size(102, 80);
-            this.btnMuonSach.TabIndex = 0;
-            this.btnMuonSach.Text = "Mượn sách";
-            // 
-            // btMuontrasach
-            // 
-            this.btMuontrasach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.namemanager_32x32;
-            this.btMuontrasach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btMuontrasach.Location = new System.Drawing.Point(12, 3);
-            this.btMuontrasach.Name = "btMuontrasach";
-            this.btMuontrasach.Size = new System.Drawing.Size(120, 89);
-            this.btMuontrasach.TabIndex = 0;
-            this.btMuontrasach.Text = "Xử Lý Mượn Trả Sách";
-            // 
-            // btTracuusach
-            // 
-            this.btTracuusach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.lookup_reference_32x32;
-            this.btTracuusach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btTracuusach.Location = new System.Drawing.Point(86, 12);
-            this.btTracuusach.Name = "btTracuusach";
-            this.btTracuusach.Size = new System.Drawing.Size(74, 68);
-            this.btTracuusach.TabIndex = 1;
-            this.btTracuusach.Text = "Tra cứu sách";
-            // 
-            // btNhapsach
-            // 
-            this.btNhapsach.ImageOptions.Image = global::QLTV_3layer.Properties.Resources.content_32x32;
-            this.btNhapsach.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btNhapsach.Location = new System.Drawing.Point(12, 12);
-            this.btNhapsach.Name = "btNhapsach";
-            this.btNhapsach.Size = new System.Drawing.Size(67, 68);
-            this.btNhapsach.TabIndex = 0;
-            this.btNhapsach.Text = "Nhập Sách";
-            this.btNhapsach.Click += new System.EventHandler(this.btNhapsach_Click);
+            this.tabItem1.AttachedControl = this.tabControlPanel1;
+            this.tabItem1.Name = "tabItem1";
+            this.tabItem1.Text = "tabItem1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 386);
+            this.ClientSize = new System.Drawing.Size(845, 472);
             this.Controls.Add(this.tabMain);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
@@ -540,11 +540,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
-            this.ribbonPanel5.ResumeLayout(false);
-            this.ribbonPanel4.ResumeLayout(false);
             this.ribbonPanel3.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);
             this.ribbonPanel1.ResumeLayout(false);
+            this.ribbonPanel5.ResumeLayout(false);
+            this.ribbonPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).EndInit();
             this.tabMain.ResumeLayout(false);
             this.ResumeLayout(false);

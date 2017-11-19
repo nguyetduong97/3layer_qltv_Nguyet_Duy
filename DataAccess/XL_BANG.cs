@@ -41,6 +41,12 @@ namespace DataAccess
         #region Cac phuong thc khoi tao
         public XL_BANG() : base() { }
         //tao moi bang voi ten pTen_bang
+
+        public XL_BANG(String pTen_bang)
+        {
+            mTen_bang = pTen_bang;
+            Doc_bang();
+        }
         public XL_BANG(String pTen_bang, String pChuoi_SQL)
         {
             mTen_bang = pTen_bang;
@@ -48,10 +54,7 @@ namespace DataAccess
             Doc_bang();
         }
 
-        public XL_BANG(string v)
-        {
-            this.v = v;
-        }
+     
         #endregion
         #region cac phuong thuc xu ly: doc, ghi, loc du lieu
         private void Doc_bang()

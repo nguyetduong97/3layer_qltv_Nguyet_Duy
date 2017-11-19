@@ -1,4 +1,5 @@
 ﻿using BusinessLogic;
+using DataAccess;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace QLTV_3layer
 {
     public partial class frm_BANDOC : Form
@@ -24,7 +24,7 @@ namespace QLTV_3layer
 
         private void frm_BANDOC_Load(object sender, EventArgs e)
         {
-            Bang_BANDOC = new LOP.XL_BANDOC();
+            Bang_BANDOC = new XL_BANDOC();
             Bang_BANDOC.Columns["MaThe"].ReadOnly = true;
             dgvDSBD.DataSource = Bang_BANDOC;
             txtMaThe.DataBindings.Add("text", Bang_BANDOC, "MaThe");
@@ -80,7 +80,7 @@ namespace QLTV_3layer
             An_hien_nut_lenh(true);
             DS_BANDOC.AddNew();
             // phát sinh mã thẻ
-            SqlConnection cnn = new SqlConnection(LOP.XL_BANG.Chuoi_lien_ket);
+            SqlConnection cnn = new SqlConnection(XL_BANG.Chuoi_lien_ket);
             cnn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
