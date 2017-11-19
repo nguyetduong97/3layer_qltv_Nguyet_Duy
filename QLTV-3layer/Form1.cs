@@ -16,6 +16,7 @@ namespace QLTV_3layer
         public Form1()
         {
             InitializeComponent();
+
             ShowFormDangNhap();
         }
 
