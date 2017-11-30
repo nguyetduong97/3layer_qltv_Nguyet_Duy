@@ -35,6 +35,7 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2">
       <HintPath>..\..\..\CSDL-20171103\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
@@ -42,9 +43,12 @@
     <Reference Include="DevExpress.Utils.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +71,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTHONGKE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTHONGKE.Designer.cs">
+      <DependentUpon>frmTHONGKE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuLyMuonTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuLyMuonTraSach.Designer.cs">
+      <DependentUpon>frmXuLyMuonTraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_BANDOC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +101,12 @@
     <Compile Include="frm_Sach.Designer.cs">
       <DependentUpon>frm_Sach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_TraCuuSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TraCuuSach.Designer.cs">
+      <DependentUpon>frm_TraCuuSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rptMUONSACH.cs">
@@ -96,6 +118,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTHONGKE.resx">
+      <DependentUpon>frmTHONGKE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuLyMuonTraSach.resx">
+      <DependentUpon>frmXuLyMuonTraSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_BANDOC.resx">
       <DependentUpon>frm_BANDOC.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Sach.resx">
       <DependentUpon>frm_Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TraCuuSach.resx">
+      <DependentUpon>frm_TraCuuSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

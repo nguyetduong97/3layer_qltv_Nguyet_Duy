@@ -86,11 +86,11 @@
             // ribbonControl1
             // 
             this.ribbonControl1.CaptionVisible = true;
+            this.ribbonControl1.Controls.Add(this.ribbonPanel5);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel5);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.rbTHeThong,
@@ -123,6 +123,7 @@
             this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel3.Size = new System.Drawing.Size(845, 98);
             this.ribbonPanel3.TabIndex = 3;
+            this.ribbonPanel3.Visible = false;
             // 
             // btTracuusach
             // 
@@ -133,6 +134,7 @@
             this.btTracuusach.Size = new System.Drawing.Size(74, 68);
             this.btTracuusach.TabIndex = 1;
             this.btTracuusach.Text = "Tra cứu sách";
+            this.btTracuusach.Click += new System.EventHandler(this.btTracuusach_Click);
             // 
             // btNhapsach
             // 
@@ -153,7 +155,7 @@
             this.ribbonPanel2.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel2.Size = new System.Drawing.Size(845, 98);
             this.ribbonPanel2.TabIndex = 2;
             this.ribbonPanel2.Visible = false;
             // 
@@ -178,7 +180,7 @@
             this.ribbonPanel1.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel1.Size = new System.Drawing.Size(845, 98);
             this.ribbonPanel1.TabIndex = 1;
             this.ribbonPanel1.Visible = false;
             // 
@@ -220,9 +222,8 @@
             this.ribbonPanel5.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel5.Name = "ribbonPanel5";
             this.ribbonPanel5.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel5.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel5.Size = new System.Drawing.Size(845, 98);
             this.ribbonPanel5.TabIndex = 5;
-            this.ribbonPanel5.Visible = false;
             // 
             // btnMuonSach
             // 
@@ -233,6 +234,7 @@
             this.btnMuonSach.Size = new System.Drawing.Size(102, 80);
             this.btnMuonSach.TabIndex = 0;
             this.btnMuonSach.Text = "Mượn sách";
+            this.btnMuonSach.Click += new System.EventHandler(this.btnMuonSach_Click);
             // 
             // ribbonPanel4
             // 
@@ -242,7 +244,7 @@
             this.ribbonPanel4.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel4.Name = "ribbonPanel4";
             this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel4.Size = new System.Drawing.Size(634, 98);
+            this.ribbonPanel4.Size = new System.Drawing.Size(845, 98);
             this.ribbonPanel4.TabIndex = 4;
             this.ribbonPanel4.Visible = false;
             // 
@@ -255,6 +257,7 @@
             this.btMuontrasach.Size = new System.Drawing.Size(120, 89);
             this.btMuontrasach.TabIndex = 0;
             this.btMuontrasach.Text = "Xử Lý Mượn Trả Sách";
+            this.btMuontrasach.Click += new System.EventHandler(this.btMuontrasach_Click);
             // 
             // rbTHeThong
             // 
@@ -272,7 +275,6 @@
             // 
             // rbtSach
             // 
-            this.rbtSach.Checked = true;
             this.rbtSach.ImagePaddingHorizontal = 8;
             this.rbtSach.Name = "rbtSach";
             this.rbtSach.Panel = this.ribbonPanel3;
@@ -287,6 +289,7 @@
             // 
             // rbtThongKeBaoCao
             // 
+            this.rbtThongKeBaoCao.Checked = true;
             this.rbtThongKeBaoCao.ImagePaddingHorizontal = 8;
             this.rbtThongKeBaoCao.Name = "rbtThongKeBaoCao";
             this.rbtThongKeBaoCao.Panel = this.ribbonPanel5;

@@ -75,7 +75,50 @@ namespace QLTV_3layer
         private void btNhapsach_Click(object sender, EventArgs e)
         {
             TabItem tab = tabMain.CreateTab("Sách");
+            frm_Sach f_SACH = new frm_Sach();
+            f_SACH.Dock = DockStyle.Fill;
+            f_SACH.FormBorderStyle = FormBorderStyle.None;
+            f_SACH.TopLevel = false;
+            tab.AttachedControl.Controls.Add(f_SACH);
+            f_SACH.Show();
+            tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
 
+        }
+
+        private void btTracuusach_Click(object sender, EventArgs e)
+        {
+            TabItem tab = tabMain.CreateTab("Sách");
+            frm_TraCuuSach f_TRACUU = new frm_TraCuuSach();
+            f_TRACUU.Dock = DockStyle.Fill;
+            f_TRACUU.FormBorderStyle = FormBorderStyle.None;
+            f_TRACUU.TopLevel = false;
+            tab.AttachedControl.Controls.Add(f_TRACUU);
+            f_TRACUU.Show();
+            tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+        }
+
+        private void btMuontrasach_Click(object sender, EventArgs e)
+        {
+            TabItem tab = tabMain.CreateTab("Mượn Trả Sách");
+            frmXuLyMuonTraSach f_MUONSACH = new frmXuLyMuonTraSach();
+            f_MUONSACH.Dock = DockStyle.Fill;
+            f_MUONSACH.FormBorderStyle = FormBorderStyle.None;
+            f_MUONSACH.TopLevel = false;
+            tab.AttachedControl.Controls.Add(f_MUONSACH);
+            f_MUONSACH.Show();
+            tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+        }
+
+        private void btnMuonSach_Click(object sender, EventArgs e)
+        {
+            TabItem tab = tabMain.CreateTab("Mượn Trả Sách");
+            frmXuLyMuonTraSach f_MUONSACH = new frmXuLyMuonTraSach();
+            f_MUONSACH.Dock = DockStyle.Fill;
+            f_MUONSACH.FormBorderStyle = FormBorderStyle.None;
+            f_MUONSACH.TopLevel = false;
+            tab.AttachedControl.Controls.Add(f_MUONSACH);
+            f_MUONSACH.Show();
+            tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
         }
     }
 }
