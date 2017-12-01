@@ -54,13 +54,13 @@ namespace QLTV_3layer
             ds.Tables.AddRange(new DataTable[] { bang_MUONSACH, bang_SACH });
             DataRelation qh = new DataRelation("FR_SACH_MUONSACH", bang_SACH.Columns["MaSach"], bang_MUONSACH.Columns["MaSach"]);
             ds.Relations.Add(qh);
-            DataColumn cot_TuDe = new DataColumn("TuDe", Type.GetType("System.String"), "Parent(FR_SACH_MUONSACH).TuDe");
+            DataColumn cot_TuaDe = new DataColumn("TuaDe", Type.GetType("System.String"), "Parent(FR_SACH_MUONSACH).TuaDe");
             DataColumn cot_TacGia = new DataColumn("TacGia", Type.GetType("System.String"), "Parent(FR_SACH_MUONSACH).TacGia");
-            bang_MUONSACH.Columns.AddRange(new DataColumn[] { cot_TuDe, cot_TacGia });
+            bang_MUONSACH.Columns.AddRange(new DataColumn[] { cot_TuaDe, cot_TacGia });
 
             cobMaSach.DataBindings.Add("SelectedValue", bang_MUONSACH, "MaSach");
             dNgayMuon.DataBindings.Add("text", bang_MUONSACH, "NgayMuon");
-            dNgayTra.DataBindings.Add("tetx", bang_MUONSACH, "NgayTra");
+            dNgayTra.DataBindings.Add("text", bang_MUONSACH, "NgayTra");
 
             dgvMuonSach.DataSource = bang_MUONSACH;
             DS_MUON_SACH = this.BindingContext[bang_MUONSACH];
